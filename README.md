@@ -1,2 +1,2 @@
 # The-C
-There you can see how I'm learning C by book "The C programming language"
+Here you can see how I'm learning C by book "The C programming language"
