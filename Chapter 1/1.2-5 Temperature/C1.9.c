@@ -1,27 +1,29 @@
 #include <stdio.h>
-
+#define OUT 0
+#define IN 1
 /*You must use Ctrl-Z to get EOF, so after write come text in progamm click
 Ctrl-Z to stop while loop.*/
 
 int main(int argc, char const* argv[]) {
 
-    char curr;
-    char next;
-    char temp;
+    char c;
+    int stat = OUT;
     _Bool IsSpBf = 0;
 
-    while ((curr = getchar()) != EOF) {
-        if (curr == ' ' && (next = getchar()) != ' ') {
-            putchar(curr);
-            putchar(next);
-            IsSpBf = 0;
+    while ((c = getchar()) != EOF) {
+
+        if (c == ' ' || c == '\t' || c == '\n') {
+            stat = OUT;
         }
-        if (curr == next == ' ' && IsSpBf == 0) {
+
+        else if (stat == OUT && (c != ' ' && c != '\t' && c != '\n')) {
+            stat = IN;
             putchar(' ');
-            IsSpBf == 1;
         }
-        else if (curr != ' ') {
-            putchar(curr);
+
+
+        if (stat == IN) {
+            putchar(c);
         }
     }
 
