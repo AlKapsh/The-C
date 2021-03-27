@@ -1,5 +1,17 @@
-# Created by https://www.toptal.com/developers/gitignore/api/windows
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows
+
+# Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -27,4 +39,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows
+# End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode
