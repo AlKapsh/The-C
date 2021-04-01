@@ -18,8 +18,6 @@ int main(){
             arr[len] = c;
             len++;
         }
-        
-
     }
     return 0;
 }
