@@ -26,16 +26,15 @@ int strindex(char s[], char t[]) {
         }
         i++;
     }
-    return pos;
+    return pos + strlen(t) - 1;
 }
-
 
 int main() {
 
-    char s[10] = { "asdfghjkl" };
+    char s[] = { "asdfghjklasd" };
     char t[] = { "fghj" };
     printf("%d\n", strindex(s, t));
     printf("%d\n", strindex(s, "asd"));
-    printf("%d\n", strindex(s, "abc"));
+    printf("%d\n", strindex(s, "jkl"));
     return 0;
 }
