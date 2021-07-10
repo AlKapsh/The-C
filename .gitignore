@@ -36,6 +36,11 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+# Gitignore etc
+.gitignore
+README.md
+Books/*
+
 # Windows shortcuts
 *.lnk
 
